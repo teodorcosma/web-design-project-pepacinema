@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b753593c6.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+  <div class="navbar">
+    <div class="navbar-container">  
+        <div class="logo-container"><h1 class="logo"><a class="logoa" href="index.html">pepacinema</h1></a> </div>    <div class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-list-item"> <a class="menu-list-item-link" href="index.html">home</a></li>
+                <li class="menu-list-item"><a class="menu-list-item-link" href="movies.html">movies</a> </li>
+                <li class="menu-list-item active"><a class="menu-list-item-link" href="menu.html">food menu</a>
+                    <ul id="submenu-item-ul" >
+                        <li class="subBar"><a href="menu.html#snacks">snacks</a></li>
+                        <li class="subBar"><a href="menu.html#beverages">beverages</a></li>
+                    </ul>
+                    </li>
+               
+                <li class="menu-list-item"> <a class="menu-list-item-link" href="cinemas.html">cinemas</a>
+                    <ul id="submenu-item-ul">
+                        <li class="subBar"><a href="cinemas.html#kolejni">cinema kolejni</a></li>
+                        <li class="subBar"><a href="cinemas.html#fleda">cinema fleda</a></li>
+                        <li class="subBar"><a href="cinemas.html#vankovka">cinema vankovka</a></li>
+                    </ul>
+                    </li>
+                     <li class="menu-list-item"> <a class="menu-list-item-link" href="aboutUs.html">about us</a>
+    
+            </ul>
+        </div>
+        
+            <div class="toggle">
+                <i class="far fa-moon toggle-icon"></i>
+                <i class="far fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+        </div>
+    </div>
+    
+        </div>    
+
+    </div>    
+    <div class="sidebar">
+      <a class="menu-list-item-link" href="index.html"><i class="left-menu-icon fas fa-home"></i></a>
+      <a class="menu-list-item-link" href="movies.html"><i class="left-menu-icon fas fa-film"></i></a>
+      <a class="menu-list-item-link" href="menu.html"><i class="left-menu-icon fas fa-utensils"></i></a>
+      <a class="menu-list-item-link" href="cinemas.html"><i class="left-menu-icon far fa-hourglass"></i></a>
+      <a class="menu-list-item-link" href="aboutUs.html"><i class="left-menu-icon fas fa-info"></i></a>
+
+  </div>
+    <div class="container">
+        <div class="food-menu">
+            <a id="snacks"></a>
+            <span class="food-menu-section-title">Snacks</span>
+            <div class="food-menu-item">
+               <img class="food-menu-img" src="images/small_popcorn.png">
+                <div class="food-menu-desc">
+                  <a id="SmallPopcorn"></a>
+
+                    <h2>Small Popcorn</h2>
+                    <p>A delicious bucket full of your favourite butter-coated popcorn ! </p>     
+                     <div class="popup" id="popup-1">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup()">x</div>
+                          <h1>Nutritional facts for small popcorn ( 100 g )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>156</td>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>30</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                    <button class="food-button" onclick="togglePopup()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+                </div>    
+            </div>
+            
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/large_popcorn.jpg">
+                <div class="food-menu-desc">
+                  <a id="LargePopcorn"></a>
+
+                    <h2>Large Popcorn</h2>
+                    <p>A delicious bucket full of your favourite butter-coated popcorn, but in a bigger package, more to enjoy ! </p>     
+                    <div class="popup" id="popup-2">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup1()">x</div>
+                          <h1>Nutritional facts for large popcorn ( 100 g )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>156</td>
+                                <td>10</td>
+                                <td>3</td>
+                                <td>30</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                    <button class="food-button" onclick="togglePopup1()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+                </div>    
+            </div>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/small_nacho.jpg">
+                <div class="food-menu-desc">
+                  <a id="SmallNachos"></a>
+
+                    <h2>Small Nachos </h2>
+                    <p>Your favourite nachos, with barebcue or salt seasoning, ready for you to enjoy during your favoruite movie ! </p>     
+                    <div class="popup" id="popup-4">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup3()">x</div>
+                          <h1>Nutritional facts for large nachos ( 100 g )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>350</td>
+                                <td>15</td>
+                                <td>5</td>
+                                <td>45</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup3()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+                </div>    
+            </div>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/large_nacho.jpg">
+                <div class="food-menu-desc">
+                  <a id="LargeNachos"></a>
+
+                    <h2>Large Nachos</h2>
+                    <p>Your favourite nachos, with barebcue or salt seasoning, ready for you to enjoy during your favoruite movie, but now in a "binge"-size variant </p>     
+                    <div class="popup" id="popup-4">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup3()">x</div>
+                          <h1>Nutritional facts for large nachos ( 100 g )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>350</td>
+                                <td>15</td>
+                                <td>5</td>
+                                <td>45</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup3()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+                </div>    
+            </div>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/salsa_dip.jpg">
+                <div class="food-menu-desc">
+                  <a id="SalsaDip"></a>
+
+                    <h2>Salsa dip</h2>
+                    <p>Comes free of charge with a portion of nachos ! </p>     
+                    <div class="popup" id="popup-5">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup4()">x</div>
+                          <h1>Nutritional facts for salsa dip ( 100 g )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>330</td>
+                                <td>25</td>
+                                <td>4</td>
+                                <td>43</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup4()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+
+                </div>    
+            </div>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/cheese_dip.jpg">
+                <div class="food-menu-desc">
+                  <a id="CheddarDip"></a>
+
+                    <h2>Cheddar dip</h2>
+                    <p>Comes free of charge with a portion of nachos !  </p>     
+                    <div class="popup" id="popup-6">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup5()">x</div>
+                          <h1>Nutritional facts for cheddar dip ( 100 g )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>310</td>
+                                <td>28</td>
+                                <td>3</td>
+                                <td>42</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup5()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+
+                </div>    
+            </div>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/candy.jpg">
+                <div class="food-menu-desc">
+                  <a id="CandyBars"></a>
+
+                    <h2>Candy bars</h2>
+                    <p>Mars? Snickers ? Lion ? We got them all ! </p>     
+                    <div class="popup" id="popup-7">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup6()">x</div>
+                          <h1>Nutritional facts for candy bars ( 100 g )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>310</td>
+                                <td>12</td>
+                                <td>12</td>
+                                <td>15</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup6()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+
+                </div>    
+            </div>
+
+
+
+            <a id="beverages"></a>
+            <span class="food-menu-section-title">Beverages</span>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/small_soda.jpg">
+                <div class="food-menu-desc">
+                  <a id="SmallSoda"></a>
+
+                    <h2>Small Soda</h2>
+                    <p>Cola, Sprite, Pepsi, Mountain Dew, we got them all ! </p>     
+                    <div class="popup" id="popup-8">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup7()">x</div>
+                          <h1>Nutritional facts for small soda ( 100 ml )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>150</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>32</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup7()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+
+                </div>    
+            </div>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/large_soda.jpg">
+                <div class="food-menu-desc">
+                  <a id="LargeSoda"></a>
+
+                    <h2>Large Soda</h2>
+                    <p>Cola, Sprite, Pepsi, Mountain Dew, we got them all, "binge"-sized !</p>     
+                    <div class="popup" id="popup-9">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup8()">x</div>
+                          <h1>Nutritional facts for large soda ( 100 ml )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>150</td>
+                                <td>5</td>
+                                <td>5</td>
+                                <td>32</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup8()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+                </div>    
+            </div>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/beer.jpg">
+                <div class="food-menu-desc">
+                  <a id="Beer"></a>
+
+                    <h2>Beer</h2>
+                    <p>Why not ? Go for it ! </p>     
+                    <div class="popup" id="popup-10">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup9()">x</div>
+                          <h1>Nutritional facts for beer ( 100 ml )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>555</td>
+                                <td>12</td>
+                                <td>5</td>
+                                <td>25</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup9()"><i class="fas fa-hamburger"></i>Nutritional facts</button>        
+                            
+                  </div>    
+            </div>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/tea.jpg">
+                <div class="food-menu-desc">
+                  <a id="BobbaTea"></a>
+
+                    <h2>Bobba tea</h2>
+                    <p>Perfect for any kind of movie ! </p>     
+                    <div class="popup" id="popup-11">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup10()">x</div>
+                          <h1>Nutritional facts for bobba tea ( 100 ml )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>51</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>12</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup10()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+                </div>    
+            </div>
+
+            <div class="food-menu-item">
+                <img class="food-menu-img" src="images/wine.jpg">
+                <div class="food-menu-desc">
+                  <a id="MulledWine"></a>
+
+                    <h2>Mulled wine</h2>
+                    <p>Christmas special returning yet again ! </p>     
+                    <div class="popup" id="popup-12">
+                        <div class="overlay"></div>
+                        <div class="content">
+                          <div class="close-btn" onclick="togglePopup11()">x</div>
+                          <h1>Nutritional facts for mulled wine ( 100 ml )</h1>
+                          <table class="foodtable">
+                            <thead>
+                              <tr>
+                                <th>Kcal</th>
+                                <th>Fats</th>
+                                <th>Protein</th>
+                                <th>Carbohydrates</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>32</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>7</td>
+                              </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                      </div>
+                      <button class="food-button" onclick="togglePopup11()"><i class="fas fa-hamburger"></i>Nutritional facts</button>
+                </div>    
+            </div>
+            <div class="copyright-bar">
+                © Teodor Cosma, Radu Balc, Valentin Cristea
+             </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b753593c6.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+  <div class="navbar">
+    <div class="navbar-container">  
+        <div class="logo-container"><h1 class="logo"><a class="logoa" href="index.html">pepacinema</h1></a> </div>    <div class="menu-container">
+            <ul class="menu-list">
+                <li class="menu-list-item"> <a class="menu-list-item-link" href="index.html">home</a></li>
+                <li class="menu-list-item"><a class="menu-list-item-link" href="movies.html">movies</a> </li>
+                <li class="menu-list-item"><a class="menu-list-item-link" href="menu.html">food menu</a>
+                    <ul id="submenu-item-ul" >
+                        <li class="subBar"><a href="menu.html#snacks">snacks</a></li>
+                        <li class="subBar"><a href="menu.html#beverages">beverages</a></li>
+                    </ul>
+                    </li>
+               
+                <li class="menu-list-item active"> <a class="menu-list-item-link" href="cinemas.html">cinemas</a>
+                    <ul id="submenu-item-ul">
+                        <li class="subBar"><a href="cinemas.html#kolejni">cinema kolejni</a></li>
+                        <li class="subBar"><a href="cinemas.html#fleda">cinema fleda</a></li>
+                        <li class="subBar"><a href="cinemas.html#vankovka">cinema vankovka</a></li>
+                    </ul>
+                    </li>
+                     <li class="menu-list-item"> <a class="menu-list-item-link" href="aboutUs.html">about us</a>
+    
+            </ul>
+        </div>
+        
+            <div class="toggle">
+                <i class="far fa-moon toggle-icon"></i>
+                <i class="far fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+            </div>
+        </div>
+    </div>
+    
+        </div>    
+
+    </div>    
+    <div class="sidebar">
+      <a class="menu-list-item-link" href="index.html"><i class="left-menu-icon fas fa-home"></i></a>
+      <a class="menu-list-item-link" href="movies.html"><i class="left-menu-icon fas fa-film"></i></a>
+      <a class="menu-list-item-link" href="menu.html"><i class="left-menu-icon fas fa-utensils"></i></a>
+      <a class="menu-list-item-link" href="cinemas.html"><i class="left-menu-icon far fa-hourglass"></i></a>
+      <a class="menu-list-item-link" href="aboutUs.html"><i class="left-menu-icon fas fa-info"></i></a>
+
+  </div>
+    <div class="container">
+        <div class="food-menu">
+            <a id="snacks"></a>
+            
+            
+
+            <div class="featured-content cinema-place-img" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/cinema1.png'); background-size: cover;">
+                <a id="kolejni"></a>
+
+                <span class="cinema-big-title">Pepacinema Kolejni Brno</span>
+                <h2 class="h2cinema">What about this cinema ?</h2>
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <div class="close-btn" onclick="togglePopup()">x</div>
+                      <h1>Schedule for pepacinema Kolejni Brno</h1>
+                      <table class="foodtable">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday </th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Dune</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                          </tr>
+                          <tr>
+                            <td>House of Gucci</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                          </tr>
+                          <tr>
+                            <td>Eternals</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                          </tr>
+                          <tr>
+                            <td>Venom : Carnage</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                          </tr>
+                          <tr>
+                            <td>Thor : Ragnarok</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                          </tr>
+                          <tr>
+                            <td>Paw Patrol</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                          </tr>
+                          <tr>
+                            <td>The Gentlemen</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                    <p class="cinemapclass">This was our first ever opened location. It has a special place in our hearts because this is where it all started. This was the beginning of the Pepacinema era. </p>     
+                    <p class="cinemapclass"><button class="food-button" onclick="location.href='https://www.google.com/maps/dir/49.2160984,16.6144338/Yacht+Club,+Kolejn%C3%AD,+Brno-Kr%C3%A1lovo+Pole/@49.2011711,16.5932667,14z/data=!3m1!5s0x471294ff0f7879b9:0xa9d1de18ea0703b9!4m9!4m8!1m1!4e1!1m5!1m1!1s0x471296ab7ecc33b3:0x9261e61659b8dcda!2m2!1d16.5714535!2d49.2304392?hl=ro'"><i class="fa fa-fighter-jet"></i>Take me there !</button>
+                   <button class="food-button" onclick="togglePopup()"><i class="far fa-calendar-alt"></i>Schedule</button></p>
+
+                
+            </div>
+
+            <div class="featured-content cinema-place-img" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/cinema2.png'); background-size: cover;">
+                <a id="fleda"></a>
+                <span class="cinema-big-title">Pepacinema FLEDA</span>
+                <h2 class="h2cinema">What about this cinema ?</h2>
+                <div class="popup" id="popup-2">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <div class="close-btn" onclick="togglePopup1()">x</div>
+                      <h1>Schedule for pepacinema Fleda</h1>
+                      <table class="foodtable">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday </th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Dune</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                          </tr>
+                          <tr>
+                            <td>House of Gucci</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                          </tr>
+                          <tr>
+                            <td>Eternals</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                          </tr>
+                          <tr>
+                            <td>Venom : Carnage</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                          </tr>
+                          <tr>
+                            <td>Thor : Ragnarok</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                          </tr>
+                          <tr>
+                            <td>Paw Patrol</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                          </tr>
+                          <tr>
+                            <td>The Gentlemen</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                    <p class="cinemapclass">After our ERASMUS experience in Brno we knew we had to reach an agreement with our favourite place, therefore, pepacinema x FLEDA was born. A mix of both young fun and sophisticated evenings, a place good for every type of person </p>     
+                    <p class="cinemapclass1"><button class="food-button"onclick="location.href='https://www.google.com/maps/dir/49.2160984,16.6144338/Fleda+club,+%C5%A0tef%C3%A1nikova,+Brno-Kr%C3%A1lovo+Pole/@49.2120438,16.6054039,16z/data=!3m2!4b1!5s0x471294ff0f7879b9:0xa9d1de18ea0703b9!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47129469790532ed:0x916e051d60e55706!2m2!1d16.6032825!2d49.2098499?hl=ro'"><i class="fa fa-fighter-jet"></i>Take me there !</button>
+                        <button class="food-button" onclick="togglePopup1()"><i class="far fa-calendar-alt"></i>Schedule</button></p>
+                        
+            </div>
+
+            <div class="featured-content cinema-place-img" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/cinema3.png'); background-size: cover;">
+                <a id="vankovka"></a>
+                <span class="cinema-big-title">Pepacinema Vankovka</span>
+                <h2 class="h2cinema">What about this cinema ?</h2>
+                <div class="popup" id="popup-3">
+                    <div class="overlay"></div>
+                    <div class="content">
+                      <div class="close-btn" onclick="togglePopup2()">x</div>
+                      <h1>Schedule for pepacinema Vankovka</h1>
+                      <table class="foodtable">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday </th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Dune</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                            <td>13:30</td>
+                          </tr>
+                          <tr>
+                            <td>House of Gucci</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                            <td>15:00</td>
+                          </tr>
+                          <tr>
+                            <td>Eternals</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                            <td>16:30</td>
+                          </tr>
+                          <tr>
+                            <td>Venom : Carnage</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                            <td>18:00</td>
+                          </tr>
+                          <tr>
+                            <td>Thor : Ragnarok</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                            <td>19:30</td>
+                          </tr>
+                          <tr>
+                            <td>Paw Patrol</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                            <td>21:00</td>
+                          </tr>
+                          <tr>
+                            <td>The Gentlemen</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                            <td>23:00</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+                    <p class="cinemapclass">Vankovka. The all-arounder. You want groceries ? Vankovka. You want clothing ? Vankovka. Food? Yup, Vankovka. Why not have the finest cinema experience as well ? Now availabile in Vankovka. </p>     
+                    <p class="cinemapclass2"><button class="food-button"onclick="location.href='https://www.google.com/maps/dir//galerie+vankovka/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x471294ff05f66cab:0xc66ab6d264245299?sa=X&hl=ro&ved=2ahUKEwjXlNn8wdr0AhUiQvEDHanUDSQQ9Rd6BAgpEAU'"><i class="fa fa-fighter-jet"></i>Take me there !</button>
+                 <button class="food-button" onclick="togglePopup2()"><i class="far fa-calendar-alt"></i>Schedule</button></p>
+            </div>
+            
+           
+            </div>
+            <div class="copyright-bar">
+                © Teodor Cosma, Radu Balc, Valentin Cristea
+             </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>
